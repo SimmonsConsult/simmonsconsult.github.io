@@ -1,20 +1,13 @@
 <!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 <html>
-
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
+    {{ content }}
     {% include footer.html %}
-
+    {% include scripts.html %}
   </body>
-
 </html>
